@@ -1,5 +1,4 @@
 {
-  "proxy": "http://localhost:5000",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "svg && react-scripts build",
+    "build": "svg-sprite my-images/* -o build/images",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "svg": "node ./generate-sprite.js"
